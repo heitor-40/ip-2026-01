@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+    var b, e int
+
+    fmt.Print("base: ")
+    fmt.Scan(&b)
+
+    fmt.Print("expoente: ")
+    fmt.Scan(&e)
+     r:=1
+    for i := 1; i <= e; i++ {
+        r = r * b
+    }
+
+    fmt.Printf("valor da potencia:%d\n", r)
+}
